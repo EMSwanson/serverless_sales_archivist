@@ -9,22 +9,22 @@ try:
         # Declare your Primary Key in the KeySchema argument
         KeySchema=[
             {
-                "AttributeName": "Author",
+                "AttributeName": "account_id",
                 "KeyType": "HASH"
             },
             {
-                "AttributeName": "Title",
+                "AttributeName": "task_id",
                 "KeyType": "RANGE"
             }
         ],
         # Any attributes used in KeySchema or Indexes must be declared in AttributeDefinitions
         AttributeDefinitions=[
             {
-                "AttributeName": "Author",
+                "AttributeName": "account_id",
                 "AttributeType": "S"
             },
             {
-                "AttributeName": "Title",
+                "AttributeName": "task_id",
                 "AttributeType": "S"
             }
         ],
